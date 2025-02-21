@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Student input form</title>
@@ -23,6 +23,11 @@
         <option th:value="srm">SRM</option>
         <option th:value="amritha">AMRITHA</option>
     </select>
+
+    <input type="radio" th:field="*{favsub}" th:value ="cse">CSE</input>
+    <input type="radio" th:field="*{favsub}" th:value ="ece">ECE</input>
+    <input type="radio" th:field="*{favsub}" th:value ="chemical">CHEMICAL</input>
+    <input type="radio" th:field="*{favsub}" th:value ="civil">CIVIL</input>
     <button type="submit">Submit</button>
 </form>
 
