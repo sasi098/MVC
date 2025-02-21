@@ -4,6 +4,7 @@ public class Student {
     private String firstname;
     private String lastname;
     private int age;
+    private String university;
 
     public String getFirstname() {
         return firstname;
@@ -17,6 +18,10 @@ public class Student {
         return age;
     }
 
+    public String getUniversity() {
+        return university;
+    }
+
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
@@ -27,5 +32,9 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void setUniversity(String university) {
+        this.university = university;
     }
 }

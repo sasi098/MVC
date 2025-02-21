@@ -15,6 +15,14 @@
     <label>
         <input type="number" placeholder="enter age" th:field="*{age}" />
     </label>
+
+    <select th:field = "*{university}">
+        <option th:value="vitvellore">VIT VELLORE</option>
+        <option th:value="vitchennai">VIT CHENNAI</option>
+        <option th:value="vitBHOPAL">VIT BHOPAL</option>
+        <option th:value="srm">SRM</option>
+        <option th:value="amritha">AMRITHA</option>
+    </select>
     <button type="submit">Submit</button>
 </form>
 
