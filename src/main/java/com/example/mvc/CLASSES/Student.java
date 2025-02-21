@@ -6,6 +6,7 @@ public class Student {
     private int age;
     private String university;
     private String favsub;
+    private String checkbox;
 
     public String getFirstname() {
         return firstname;
@@ -21,6 +22,10 @@ public class Student {
 
     public String getFavsub() {
         return favsub;
+    }
+
+    public String getCheckbox() {
+        return checkbox;
     }
 
     public String getUniversity() {
@@ -45,5 +50,9 @@ public class Student {
 
     public void setFavsub(String favsub) {
         this.favsub = favsub;
+    }
+
+    public void setCheckbox(String checkbox) {
+        this.checkbox = checkbox;
     }
 }
