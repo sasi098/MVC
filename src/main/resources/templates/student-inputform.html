@@ -14,7 +14,11 @@
     </label><br /><br />
     <label>
         <input type="number" placeholder="enter age" th:field="*{age}" />
-    </label>
+    </label><br /><<br />
+
+<!--    <span th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}"></span>-->
+<!--//THIS SPAN IS FOR ONLY FOR STYLING CSS OVER ERROR IF ANY ERRORS ARE OCCURED -->
+
 
     <select th:field = "*{university}">
         <option th:value="vitvellore">VIT VELLORE</option>
@@ -22,17 +26,17 @@
         <option th:value="vitBHOPAL">VIT BHOPAL</option>
         <option th:value="srm">SRM</option>
         <option th:value="amritha">AMRITHA</option>
-    </select>
+    </select><br /><<br />
 
     <input type="radio" th:field="*{favsub}" th:value ="cse">CSE</input>
     <input type="radio" th:field="*{favsub}" th:value ="ece">ECE</input>
     <input type="radio" th:field="*{favsub}" th:value ="chemical">CHEMICAL</input>
-    <input type="radio" th:field="*{favsub}" th:value ="civil">CIVIL</input>
+    <input type="radio" th:field="*{favsub}" th:value ="civil">CIVIL</input><br /><br />
 
     <input type="checkbox" th:value="macbook" th.field="*{checkbox}" >MACBOOK<input>
     <input type="checkbox" th:value="windows" th.field="*{checkbox}" />WINDOWS<input>
     <input type="checkbox" th:value="linux" th.field="*{checkbox}" />LINUX<input>
-    <input type="checkbox" th:value="opra" th.field="*{checkbox}" />OPERA<input>
+    <input type="checkbox" th:value="opra" th.field="*{checkbox}" />OPERA<input><br /><br />
 
     <button type="submit">Submit</button>
 </form>

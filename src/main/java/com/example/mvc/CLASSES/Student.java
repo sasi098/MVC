@@ -1,8 +1,18 @@
 package com.example.mvc.CLASSES;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
 public class Student {
+    @NotNull(message ="First Name is required")
+    @Size(min = 1,max = 100,message = "size must be greater than 1")
     private String firstname;
     private String lastname;
+
+    @Min(value = 18, message = "AGE must be greater than 18")
+    @Max(value=28, message = "AGE must be less than 28")
     private int age;
     private String university;
     private String favsub;
